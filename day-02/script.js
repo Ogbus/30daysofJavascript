@@ -21,7 +21,7 @@ console.log(nameChallenge.toLowerCase());
 console.log(nameChallenge.substr(0, 1));
 console.log(nameChallenge.substring(0, 3));
 console.log(nameChallenge.substring(3, 21));
-console.log(newSentence.substr(32,54));
+console.log(newSentence.substr(31,23));
 console.log(nameChallenge.includes("Script"));
 console.log(nameChallenge.split(''));
 console.log(nameChallenge.split(','));
