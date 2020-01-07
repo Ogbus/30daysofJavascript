@@ -20,14 +20,15 @@ console.log(shoppingCart.splice(4, 1))
 console.log(shoppingCart[3] = "Green Tea")
 
 // In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-if (countries == "Ethiopia") {
+let countries_indexof = countries.indexOf("Ethiopia")
+if(countries_indexof != -1) {
     console.log("ETHIOPIA")
 } else {
     countries.push("Ethiopia")
     console.log(countries)
 }
 
-countries == "Ethiopia" ? console.log("ETHIOPIA") : console.log(countries.push("Ethiopia"))
+// countries == "Ethiopia" ? console.log("ETHIOPIA") : console.log(countries.push("Ethiopia"))
 
 // The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];

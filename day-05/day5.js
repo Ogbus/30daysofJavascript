@@ -58,7 +58,7 @@ let one_sentence = itCompanies.join()
 console.log(one_sentence)
 
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-itCompanies.includes("amazon") ? console.log("Amazon") : console.log("The company not found")
+itCompanies.indexOf("amazon") ? console.log("Amazon") : console.log("The company not found")
 // if (itCompanies == "facebook") {
 //     console.log("Facebook")
 // } else if (itCompanies == "ibm"){
@@ -106,4 +106,4 @@ console.log(itCompanies.slice(3, 2))
 console.log(itCompanies.pop())
 
 // Remove all IT companies
-console.log(itCompanies.splice(0, 8))
+console.log(itCompanies.splice(0, 9))
