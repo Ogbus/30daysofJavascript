@@ -38,9 +38,9 @@ do {
 // Iterate 0 to n using for loop
 
 // Write a loop that makes the following pattern using console.log():
-// for(let i = 1; i <= 7; i++) {
-//     console.log("#", repeat(i))
-// }
+for(let i = 1; i <= 7; i++) {
+    console.log("#", repeat(i))
+}
 
 for (let str = "#"; str.length <= 7; str += "#") {
   console.log(str);
@@ -175,11 +175,11 @@ for(let i = 0; i < hexadecimal_length; i++) {
 console.log(hexadecimal_first)
 
 // Write a script which generates a random rgb color number.
-// let rgb_color = Math.floor(Math.random() * 255);
-// for(let i = 0; i <colorss; i++) {
-//     let color_rgb = 'RGB(' + rgb_color + "," + rgb_color + "," + rgb_color + ')'
-//     console.log(color_rgb);
-// }
+let rgb_color = Math.floor(Math.random() * 255);
+for(let i = 0; i <colorss; i++) {
+    let color_rgb = 'RGB(' + rgb_color + "," + rgb_color + "," + rgb_color + ')'
+    console.log(color_rgb);
+}
 
 function r() { 
     return Math.floor(Math.random() * 255) 
@@ -205,3 +205,32 @@ for(const arr of countries) {
 console.log(countries_length)
 
 // Use the countries array to create the following array of arrays:
+/*let arr_countries = new Array(countries);
+for(const arr of countries){
+    console.log(`${arr_countries.push(arr.length)}, ${arr_countries[arr]}`)
+}
+console.log(arr_countries)
+*/
+// for(let i = 0; i<countries.length; i++)
+
+
+//In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 
+//'land', print it as array. If there is no country containing the word 'land', print 'These are countries without land'.
+
+let land_countries = []
+for (let arr of countries) {
+    if(arr.includes('land')) {
+        console.log(land_countries.push(arr));
+    }
+    if (arr.includes('land') != true) {
+        land_countries.push(arr);
+    }
+}
+console.log(land_countries)
+// for (let i = 0; i<countries.length; i++) {
+//     if(arr.includes('land')) {
+//         land_countries.push(i);
+//     } else if (countries.includes('land') != true) {
+//         land_countries.push(i)
+//     }
+// }
