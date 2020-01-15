@@ -15,7 +15,7 @@ console.error("This is console error message")
 let array = ['felis', 'john', 'iroms', 'teddy', 'fatima', 'edward'];
 console.time('This is a regular for loop');
 for(let i =0; i<array.length; i++){
-    console.log(i);
+    console.log(array[i]);
 }
 console.timeEnd('This is a regular for loop');
 
@@ -24,7 +24,7 @@ console.timeEnd('This is a regular for loop');
 console.time('This is a while loop');
 let i = 0;
 while(i < array.length) {
-    console.log(i);
+    console.log(array[i]);
     i++;
 }
 console.timeEnd('This is a while loop');
@@ -44,3 +44,8 @@ array.forEach((element) => {
     console.log(element)
 })
 console.timeEnd('This is a forEach loop')
+
+// ======================
+
+// 10 > 2 * 10 use console.assert()
+console.assert(10 > 2 * 10, '10 is not greater than the multiplication of 2 and 10.')
