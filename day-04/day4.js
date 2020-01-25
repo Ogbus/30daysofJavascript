@@ -105,10 +105,10 @@ switch (what_day) {
         console.log(`${what_day} is a work day`)
         break;
     case "saturday":
-        console.log(`${what_day} is a workend day`)
+        console.log(`${what_day} is a weekend day`)
         break;
     case "sunday":
-        console.log(`${what_day} is a workend day`)
+        console.log(`${what_day} is a weekend day`)
         break;
     default:
         console.log(`${what_day} is not a day of the week`)
